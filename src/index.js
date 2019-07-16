@@ -3,6 +3,8 @@ function main(){
    
     var c = document.getElementById("mcanvas");
     var score = document.getElementById("score");
+    // document.body.setAttribute( "style", "-webkit-transform: rotate(-90deg);");
+    
 
     var ctx = c.getContext("2d");
     const GAME_HEIGHT = 600;
@@ -60,24 +62,23 @@ function main(){
             gameSpeed = 8;
         }else if(position_counter==15){
             gameSpeed = 10;
+        }else if(position_counter==20){
+            gameSpeed = 12;
+        }else if(position_counter==25){
+            gameSpeed = 14;
+        }else if(position_counter==30){
+            gameSpeed = 16;
+        }else if(position_counter==35){
+            gameSpeed = 18;
+        }else if(position_counter==40){
+            gameSpeed = 20;
+        }else if(position_counter==45){
+            gameSpeed = 22;
+        }else if(position_counter==55){
+            gameSpeed = 26;
+        }else if(position_counter==60){
+            gameSpeed = 28;
         }
-        // else if(position_counter==20){
-        //     gameSpeed = 12;
-        // }else if(position_counter==25){
-        //     gameSpeed = 14;
-        // }else if(position_counter==30){
-        //     gameSpeed = 16;
-        // }else if(position_counter==35){
-        //     gameSpeed = 18;
-        // }else if(position_counter==40){
-        //     gameSpeed = 20;
-        // }else if(position_counter==45){
-        //     gameSpeed = 22;
-        // }else if(position_counter==55){
-        //     gameSpeed = 26;
-        // }else if(position_counter==60){
-        //     gameSpeed = 28;
-        // }
 
 
         
@@ -108,7 +109,7 @@ function main(){
         
 
         name.draw(ctx);
-        requestAnimationFrame(gameLoop)
+        requestAnimationFrame(gameLoop);
         }
 
         
