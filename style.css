@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3f3;
+    
+}
+.cont{
+    width:1000px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mcanvas{
+    border:none;
+    background-image: url("cbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 5px 8px #777777;
+}
+
+.m_score{
+    margin: 10px;
+    text-align: center; 
+    font-size: 25px;
+    font-weight:800;
+}
