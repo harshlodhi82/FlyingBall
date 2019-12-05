@@ -7,14 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flying Bird</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function reload (){
+            window.location.reload();
+        }
+    </script>
 </head>
 <body>
+    <div id="alert">
+        <p>Your score is <span id="mscore"></span></p>
+        <button  onclick="reload()">Restart</button>
+    </div>
     <div class="cont">
         <p class="m_score">Score : <span id="score" ></span></p>
         <canvas id="mcanvas" width="1000" height="600"></canvas>
         
     </div>
 
+    
+
+    <script src="src/Opsticals.js" ></script>
+    <script src="src/Name.js" ></script>
+    <script src="src/InputHandler.js" ></script>
+    <script src="src/Ball.js" ></script>
     <script src="src/index.js" ></script>
     
 

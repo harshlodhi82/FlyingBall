@@ -1,9 +1,14 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: #f3f3f3;
     
 }
+
+body{
+    background-color: #e4e3e3;
+}
+
+
 .cont{
     width:1000px;
     position: fixed;
@@ -17,6 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 5px 8px #777777;
+    z-index: -1;
 }
 
 .m_score{
@@ -24,4 +30,50 @@
     text-align: center; 
     font-size: 25px;
     font-weight:800;
+}
+
+#alert{
+    position: fixed;
+    top:100px;
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    background-color: #e4e3e3;
+    z-index: +1;
+    left:50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 5px 8px #777777;
+    border-radius: 8px;
+    display: none;
+    
+}
+
+#alert p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    color: #910083;
+}
+
+#alert button{
+    text-align: center;
+    width:100px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    border: none;
+    background-color: #910083;
+    color:white;
+    font-weight: 800;
+    border-radius: 8px;
+    outline: none;
+}
+
+#alert button:hover{
+    background-color: #ffffff;
+    color:#910083;
+    border: solid;
+    cursor: pointer;
+    
 }
